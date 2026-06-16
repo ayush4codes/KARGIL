@@ -7,6 +7,7 @@
     <title>Book My Show</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -36,11 +37,43 @@
 
         <section class="banner-section">
             <div class="banner">
-                <img src="assets/images/banner_carousel_1780135243979.png" alt="Promo Banner">
-                <div class="banner-overlay">
-                    <h2>Epic Space Battle: The Premiere</h2>
-                    <p>Experience the biggest blockbuster of the year in IMAX.</p>
-                    <button class="btn-primary">Book Now</button>
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="assets/images/banner_carousel_1780135243979.png" alt="Epic Space Battle">
+                    <div class="banner-overlay">
+                        <h2>Epic Space Battle: The Premiere</h2>
+                        <p>Experience the biggest blockbuster of the year in IMAX.</p>
+                        <button class="btn-primary">Book Now</button>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="assets/images/fantasy_banner.png" alt="The Magic Kingdom">
+                    <div class="banner-overlay">
+                        <h2>The Magic Kingdom</h2>
+                        <p>Step into a world of magic, mystery, and adventure.</p>
+                        <button class="btn-primary">Book Now</button>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="assets/images/horror_banner.png" alt="The Dark Manor">
+                    <div class="banner-overlay">
+                        <h2>The Dark Manor</h2>
+                        <p>A chilling journey into the depths of a haunted estate.</p>
+                        <button class="btn-primary">Book Now</button>
+                    </div>
+                </div>
+                
+                <!-- Slider navigation buttons -->
+                <button class="slider-btn prev-btn" aria-label="Previous Slide">&#10094;</button>
+                <button class="slider-btn next-btn" aria-label="Next Slide">&#10095;</button>
+                
+                <!-- Slider indicators/dots -->
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
                 </div>
             </div>
         </section>
@@ -122,6 +155,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">Book<span class="highlight">My</span>Show</div>
+            <p style="margin-top: 10px;">Made by Nikhil Yadav</p>
         </div>
     </footer>
 </body>
